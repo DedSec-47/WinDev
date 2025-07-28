@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Windows Dev API Guide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Windows Development API</h1>
+    <p>Your reference to building native Windows applications</p>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>What is the Windows API?</h2>
+      <p>
+        The Windows API (WinAPI) is Microsoft’s core set of application programming interfaces for interacting with the Windows operating system.
+      </p>
+    </section>
+
+    <section id="common-apis">
+      <h2>Common API Categories</h2>
+      <ul>
+        <li>Kernel32: Process & memory management</li>
+        <li>User32: GUI elements (windows, menus, dialogs)</li>
+        <li>GDI32: Graphics drawing interface</li>
+        <li>Advapi32: Registry, services, and security</li>
+        <li>Ws2_32: Networking (Winsock)</li>
+      </ul>
+    </section>
+
+    <section id="example">
+      <h2>Example: MessageBox</h2>
+      <pre><code>
+#include &lt;windows.h&gt;
+
+int main() {
+    MessageBox(NULL, "Hello from WinAPI!", "MyApp", MB_OK);
+    return 0;
+}
+      </code></pre>
+      <button onclick="copyCode()">Copy Code</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Windows Dev API Docs</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
